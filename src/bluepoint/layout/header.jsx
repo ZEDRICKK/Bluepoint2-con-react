@@ -10,7 +10,7 @@ export const BluePointHeader = () => {
     }
 
   return (
-    <div id="container" style={{backgroundColor: headColor}}>
+    <div id="container" style={{ backgroundColor: '#ffff', width: '100%', height: '141.2px', position: 'relative', backgroundImage: 'none' }}>
     <img className="bluelogo" src="../../../assets/bluepoint/bluepoint2-Logo.webp" alt="Bluepoint Logo" />
     <ul className="min-w-full d-flex justify-content-center">
         <li className="lista">
