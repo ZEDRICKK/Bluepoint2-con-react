@@ -1,7 +1,7 @@
 import { BluePointHeader, Footer } from "../layout";
 
 
-export const BaseContact = () => {
+export const BaseContact = ({ children }) => {
 
 
     return (
@@ -23,6 +23,7 @@ export const BaseContact = () => {
         <div style={{ content: '', position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', backgroundColor: 'rgba(28,161,126,0.6)', zIndex: '1' }}></div>
       </div>
 
+        {children}
     
             </div>
 

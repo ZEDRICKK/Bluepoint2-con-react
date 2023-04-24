@@ -1,7 +1,10 @@
+import { BluePointHeader } from "../layout"
 
 
 export const NaviServicesPage = () => {
   return (
-    <div>NaviServicesPage</div>
+    <>
+      <BluePointHeader />
+    </>
   )
 }
