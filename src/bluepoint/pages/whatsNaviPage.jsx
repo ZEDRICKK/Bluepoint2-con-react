@@ -1,4 +1,6 @@
-import { BluePointHeader } from "../layout"
+import { ParrafosDerechaWhatsNavi } from "../components/ParrafosDerechaWhatsNavi"
+import { ParrafosIzquierdaWhatsNavi } from "../components/ParrafosIzquierdaWhatsNavi"
+import { BluePointHeader, Footer } from "../layout"
 
 
 export const WhatsNaviPage = () => {
@@ -15,12 +17,18 @@ export const WhatsNaviPage = () => {
             <img src="../../../assets/bluepoint/AdobeStock_316543923-med-rez.webp" style={{ position: 'absolute', left: '55%', width: '389px', height: '427px' }} />
           </div>
         </div>
+
       </main>
 
+      
+
       <div style={{ position: "relative", width: "100%", height: "1700px", zIndex: 1 }}>
-      <div style={{ position: "absolute", width: "980px", height: "1700px", backgroundColor: "#ffff", left: "20%", zIndex: 1 }}>
+      <div style={{ position: "absolute", width: "980px", height: "1700px", left: "19.75%", zIndex: 2}}>
+
+      <div style={{ position: "relative", width: "980px", height: "1700px", backgroundColor: "#ffff", opacity: 0.9 }}> </div>
+
         <div style={{ width: "222px", height: "1177px", position: "absolute", display: "flex", justifyContent: "center", top: "15%" }}>
-          <div className="circulos" style={{ width: "123px", height: "123px", top: 0, backgroundColor: "#2B388C", border: "4px solid #049efd" }}>
+          <div className="circulos" style={{ width: "123px", height: "123px", top: 0, backgroundColor: "#2B388C", border: "4px solid #049efd"}}>
             <img src="../../../assets/bluepoint/calendario.png" style={{ width: "110px", height: "50px" }} />
           </div>
           <div className="circulos" style={{ width: "64px", height: "64px", top: "12%", backgroundColor: "#F04E23", border: "4px solid #049efd" }}>
@@ -45,7 +53,7 @@ export const WhatsNaviPage = () => {
             <img src="../../../assets/bluepoint/cadena.png" style={{ width: "60px", height: "60px" }} />
           </div>
           <div className="circulos" style={{ width:"153px", height: "153px", top: "87%", backgroundColor: "#2B388C", border: "4px solid #049efd" }}>
-            <img src="../../../assets/bluepoint/mensaje.png" style={{ width: "150px", height: "150px" }} />
+            <img src="../../../assets/bluepoint/medicina y calculadora.png" style={{ width: "125px", height: "80px" }} />
 
 
           </div>
@@ -59,31 +67,48 @@ export const WhatsNaviPage = () => {
       <span id="span24">Hover over each point of connection below to learn how NAVI can help.</span>
       <div className="circulos" style={{ width: "50px", height: "50px", left: "75%", top: "75%", backgroundColor: "#F04E23", border: "2px solid white" }}></div>
       <div className="triangulo"></div>
-      </div>
 
-        <span className="lastspan1" style={{ position: "absolute", left: "60%", top: "2%", width: "316.36px", height: "186.04px", fontSize: "36px", fontWeight: "bolder" }}>Identifying potential gaps in patient / clinician communication. </span>
-      <span className="lastspan1" style={{ fontSize: "20px", width: "328px", position: "absolute", left: "60%", top: "15%" }}>Creating a typical “journey map” for patient care can help identify those gaps. Then communication solutions can be designed to make sure the appropriate communication takes place.
-      </span>
-      <span className="lastspan1" style={{ fontSize: "20px", width: "328px", position: "absolute", left: "60%", top: "26%" }}>Relying on phone conversations and emails alone may not be sufficient and could cost your practice time and money and put patients at risk. It’s important to create a communication strategy using technology that is reliable and effective.</span>
-      <span className="lastspan1" style={{ position: "absolute", left: "60%", top: "43%", width: "316.36px", height: "186.04px", fontSize: "36px", fontWeight: "bolder" }}>NAVI can...</span>
-
-      <span className="lastspan1" style={{ fontSize: "18px", width: "328px", position: "absolute", left: "61%", top: "47%" }}> <strong style={{ fontWeight: "bold", fontSize: "24px" }}>•</strong> Proactively send critical healthcare information to the patient.</span>
-      <span className="lastspan1" style={{ fontSize: "18px", width: "328px", position: "absolute", left: "61%", top: "51%" }}> <strong style={{ fontWeight: "bold", fontSize: "24px" }}>•</strong> Easily collect and verify critical patient information pre-visit.</span>
-      <span className="lastspan1" style={{ fontSize: "18px", width: "328px", position: "absolute", left: "61%", top: "55%" }}> <strong style={{ fontWeight: "bold", fontSize: "24px" }}>•</strong> Comfortably assist in assessing a patient’s condition remotely, providing documented triage to caregivers.</span>
-      <span className="lastspan1" style={{ fontSize: "18px", width: "328px", position: "absolute", left: "61%", top: "60%" }}> <strong style={{ fontWeight: "bold", fontSize: "24px" }}>•</strong> Facilitate telehealth as well as on-site doctor appointments.</span>
-      <span className="lastspan1" style={{ fontSize: "18px", width: "328px", position: "absolute", left: "61%", top: "65%" }}> <strong style={{ fontWeight: "bold", fontSize: "24px" }}>•</strong> Provide real-time communication and support for patients during their healthcare journey.</span>
-      <span className="lastspan1" style={{ fontSize: "18px", width: "328px", position: "absolute", left: "61%", top: "70%" }}> <strong style={{ fontWeight: "bold", fontSize: "24px" }}>•</strong> Improve patient satisfaction and engagement with personalized communication.</span>
-      <span className="lastspan1" style={{ fontSize: "18px", width: "328px", position: "absolute", left: "61%", top: "74%" }}> <strong style={{ fontWeight: "bold", fontSize: "24px" }}>•</strong> Enhance patient outcomes through effective communication and coordination.</span>
-      <span className="lastspan1" style={{ fontSize: "18px", width: "328px", position: "absolute", left: "61%", top: "78%" }}> <strong style={{ fontWeight: "bold", fontSize: "24px" }}>•</strong> Streamline administrative tasks, such as appointment scheduling and reminders, through automation.</span>
-      <span className="lastspan1" style={{ fontSize: "18px", width: "328px", position: "absolute", left: "61%", top: "83%" }}> <strong style={{ fontWeight: "bold", fontSize: "24px" }}>•</strong> Improve communication and collaboration among healthcare providers for better patient care.</span>
-      <span className="lastspan1" style={{ fontSize: "18px", width: "328px", position: "absolute", left: "61%", top: "88%" }}> <strong style={{ fontWeight: "bold", fontSize: "24px" }}>•</strong> Ensure compliance with healthcare regulations by securely managing patient data.</span>
-   
-    
-      </div>
       
+      
+      </div>
+
+      
+       <ParrafosDerechaWhatsNavi />
+  
+        <ParrafosIzquierdaWhatsNavi />
+      
+       
+    
+      <span className="notes" style={{ top: "81%", left: "22%", width: "325px" }}>
+        Continuing care, follow-up visits and bill pay.
+      </span>
+
+      <button id="boton2" className="boton2" style={{ top: "90%", left: "25%" }}>
+        Experience Navi
+      </button>
+      <button id="boton3" className="boton2" style={{ left: "55%", top: "90%" }}>
+        Contact Us
+      </button>
+
+      <span className="spanVerde" style={{ position: "absolute", top: "93%", left: "22%" }}>
+        Schedule an Online Interactive Demo
+      </span>
+      <span className="spanVerde" style={{ position: "absolute", top: "93%", left: "55%" }}>
+        For More Detailed Information
+      </span>
+  
+
+
+      </div>
+
+      
+            
     </div>
 
-   
+        <Footer />
+    
+
     </div>
+    
   )
 }
