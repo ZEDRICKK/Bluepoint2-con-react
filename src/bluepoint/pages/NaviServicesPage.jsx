@@ -3,7 +3,7 @@ import { BluePointHeader, Footer } from "../layout"
 
 export const NaviServicesPage = () => {
   return (
-    <div id="everything">
+    <div >
       <BluePointHeader/>
     <div style={{ zIndex: 1, position: "relative" }}>
       <div style={{ position: "relative", width: "100%", height: "379px" }}>
@@ -75,7 +75,7 @@ export const NaviServicesPage = () => {
             src="../../../assets/bluepoint/AdobeStock_135032238-Girl-on-phone.webp"
             style={{
               position: "absolute",
-              left: "51.35%",
+              left: "51.05%",
               width: "455px",
               height: "379px",
               objectFit: "cover",

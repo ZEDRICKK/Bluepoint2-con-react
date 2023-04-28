@@ -1,6 +1,12 @@
+import { useSlider } from "../hooks/useNext";
 
 
 export const InTheNewsSection = () => {
+
+
+  const [index, next, prev] = useSlider(0, 2);
+
+
   return (
     <div
     style={{
@@ -11,14 +17,14 @@ export const InTheNewsSection = () => {
       position: "relative",
     }}
   >
-    <span id="botonFlecha" style={{ left: "90%", top: "30%" }}>
+    <span onClick={next} id="botonFlecha" style={{ left: "90%", top: "30%" }}>
       &gt;
     </span>
-    <span id="botonFlecha1" style={{ left: "10%", top: "30%" }}>
+    <span onClick={prev} id="botonFlecha1" style={{ left: "10%", top: "30%" }}>
       &lt;
     </span>
 
-    <div id="ocultarDiv1" >
+    <div id="ocultarDiv1" className={index === 0 ? '' : 'ocultar'} >
       <img id="magazineL" src="../../../assets/bluepoint/Magazine HTO.webp" />
       <span
         className="listgreen"
@@ -40,20 +46,22 @@ export const InTheNewsSection = () => {
       >
         In The News
       </span>
-      <button
-        id="boton8"
+      <a 
+      href="https://communications.healthcaretechoutlook.com/vendor/bluepoint2-reengineering-patientdoctor-communication-cid-1265-mid-117.html"
+      target="_blank"
         className="boton2"
         style={{
           top: "75%",
           left: "25%",
           border: "1px solid white",
+          padding: 0,
         }}
       >
-        Read the Story
-      </button>
+       <span style={{position: 'absolute', left:'18%' , top: '25%'}}>Read the Story</span>
+      </a>
     </div>
 
-    <div id="ocultarDiv2" className="ocultar">
+    <div id="ocultarDiv2" className={index === 1 ? '' : 'ocultar'}>
       <img id="Quote" src="../../../assets/bluepoint/quote.webp" />
       <span
         className="listgreen"
@@ -75,20 +83,22 @@ export const InTheNewsSection = () => {
       >
         In The News
       </span>
-      <button
-        id="boton9"
+      <a 
+      href="https://www.netsolutions.com/insights/digital-transformation-trends/"
+      target="_blank"
         className="boton2"
         style={{
           top: "75%",
           left: "25%",
           border: "1px solid white",
+          padding: 0,
         }}
       >
-        Read the Story
-      </button>
+       <span style={{position: 'absolute', left:'18%' , top: '25%'}}>Read the Story</span>
+      </a>
     </div>
 
-    <div id="ocultarDiv3" className="ocultar" >
+    <div id="ocultarDiv3" className={index === 2 ? '' : 'ocultar'} >
       <img id="Klas" src="../../../assets/bluepoint/klas.webp" />
       <span
         className="listgreen"
@@ -109,18 +119,25 @@ export const InTheNewsSection = () => {
         >
           In The News
         </span>
-        <button
-          id="boton10"
-          className="boton2"
-          style={{
-            top: "75%",
-            left: "25%",
-            border: "1px solid white",
-          }}
-        >
-          Read the Story
-        </button>
+        <a 
+      href="http://demo-vp.herokuapp.com/src/patient/landing-bio.html"
+      target="_blank"
+        className="boton2"
+        style={{
+          top: "75%",
+          left: "30%",
+          border: "1px solid white",
+          padding: 0,
+        }}
+      >
+       <span style={{position: 'absolute', left:'7%' , top: '25%'}}>Reguest Whitepaper</span>
+      </a>
       </div>
+
+      <div className={index === 0 ? 'aro' : 'circle'} style={{position: 'absolute',  left: "50%" }}></div>
+      <div className={index === 1 ? 'aro' : 'circle'} style={{position: 'absolute', left: '52%' }}></div>
+      <div className={index === 2 ? 'aro' : 'circle'} style={{position: 'absolute', left: '54%'}}></div>
+
     </div>
   )
 }

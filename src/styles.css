@@ -1,8 +1,6 @@
 
 
 #everything{
-  margin:0 auto;
-  min-height: 100vh;
   justify-content: stretch;
   background-image: url('/assets/bluepoint/c86aa8_19e4d7b13e704d5e94e25ed56ded56cc_mv2.webp');
   background-repeat: no-repeat;
@@ -10,8 +8,11 @@
   background-attachment: fixed;
   background-position: center;
   position: relative;
-  
-  
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 #container{
@@ -565,6 +566,7 @@ ul {
     width: 192px;
     border: none;
     font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
   }
 
   .boton2:hover {
@@ -759,7 +761,7 @@ ul {
 }
 
 .puntero{
-  font-size: 60px;
+  font-size: 30px;
  color: #cfcfcf;
   position: absolute;
   
@@ -783,4 +785,22 @@ ul {
 
 #map {
   height: 100%;
+}
+
+.circle {
+  width: 10px;
+  height: 10px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  top: 95%;
+  position: 'absolute' 
+}
+
+.aro {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 3px solid rgb(255, 255, 255);
+  top: 94.5%;
+  position: 'absolute' 
 }

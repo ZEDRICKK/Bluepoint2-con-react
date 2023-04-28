@@ -13,7 +13,7 @@ export const ContactUsPage = () => {
 
 
     return (
-      <div id="everything" style={{ padding: 'none' }}>
+      <div  >
 
         <BaseContact>  
 

@@ -1,11 +1,16 @@
 import { ParrafosDerechaWhatsNavi } from "../components/ParrafosDerechaWhatsNavi"
 import { ParrafosIzquierdaWhatsNavi } from "../components/ParrafosIzquierdaWhatsNavi"
+import { useShow } from "../hooks/useShow"
 import { BluePointHeader, Footer } from "../layout"
 
 
 export const WhatsNaviPage = () => {
+
+
+  const [parrafo1, parrafo2, pasar] = useShow();
+
   return (
-    <div id="everything">
+    <div >
       <BluePointHeader />
 
       <main style={{ zIndex: 1, position: 'relative' }}>
@@ -14,7 +19,7 @@ export const WhatsNaviPage = () => {
             <span id="span23">We believe better communication leads to better outcomes in healthcare. Our passion and mission are to create and facilitate better communication between patients and care providers; it’s that simple.</span>
           </div>
           <div>
-            <img src="../../../assets/bluepoint/AdobeStock_316543923-med-rez.webp" style={{ position: 'absolute', left: '55%', width: '389px', height: '427px' }} />
+            <img src="../../../assets/bluepoint/AdobeStock_316543923-med-rez.webp" style={{ position: 'absolute', left: '54.7%', width: '389px', height: '427px' }} />
           </div>
         </div>
 
@@ -57,7 +62,16 @@ export const WhatsNaviPage = () => {
 
 
           </div>
-        
+          <div
+        style={{
+          position: "absolute",
+          width: "10px",
+          height: "970px",
+          top: "5%",
+          backgroundColor: "#2B388C",
+          zIndex: 1,
+        }}
+      ></div>
 
       
     

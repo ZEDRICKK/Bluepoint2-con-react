@@ -1,7 +1,9 @@
 import { ContactUsComponent } from "../components/ContactUsComponent"
 import { InTheNewsSection } from "../components/InTheNewsSection"
+import { WithNaviYouCan } from "../components/WithNaviYouCan"
 import { Footer } from "../layout"
 import { BluePointHeader } from "../layout/header"
+
 
 
 export const HomePage = () => {
@@ -16,7 +18,7 @@ export const HomePage = () => {
   return (
     <>
         <BluePointHeader/>
-        <div id="everything">
+        <div>
       <div id="img1" style={{ position: 'relative' }}>
         <img src="../../../assets/bluepoint/c86aa8_358f73285afd482195e23f9e02bbc0a9_mv2.webp" style={{ zIndex: 1, height: '535px' }} />
         <span id="span2">We’re the company that's changing the way you navigate your healthcare.</span>
@@ -61,15 +63,7 @@ export const HomePage = () => {
         <span style={{ color: "#ffff", textAlign: "center", fontFamily: "helvetica-w01-bold,helvetica-w02-bold,helvetica-lt-w10-bold,sans-serif", fontSize: "36px", fontWeight: "bolder" }}>Healthcare communication for a mobile world</span>
         </div>
 
-        <div style={{ backgroundColor: "#1CA17ECC", width: "100%", height: "559px", position: "relative" }}>
-        <div>
-        <img className="circulo" src="../../../assets/bluepoint/chekandocell.webp" style={{ top: "33%", left: "47%", backgroundColor: "#2B388C", width: "320px", height: "320px", border: "2px solid white", zIndex: 2 }} />
-          <img className="circulo" src="../../../assets/bluepoint/enfermera.webp" style={{ top: "-10%", left: "57%", backgroundColor: "#2B388C", width: "429px", height: "428px", border: "2px solid white", zIndex: 1 }} />
-          <span className="listgreen" style={{ color: "#ffff", fontSize: "28px", width: "360px", top: "36%", left: "25%" }}>Experience the power of mobile messaging for faster, more accurate communication to improve the patient experience.</span>
-          <span className="titulofuerte" style={{ fontSize: "30px", top: "28%", left: "25%" }}> With NAVI you can...</span>
-          <button id="boton11" className="boton2" style={{ top: "75%", left: "25%", border: "1px solid white" }}>Experience Navi</button>
-        </div>
-      </div>
+       <WithNaviYouCan />
 
       <div className="divStyle" style={{backgroundColor: '#2B388CCC', width: '100%', height: '550px', }}>
                 <span id="span15">Healthcare providers are increasingly adopting mobile messaging.</span>

@@ -5,7 +5,7 @@ export const BaseContact = ({ children }) => {
 
 
     return (
-      <div id="everything" style={{ padding: 'none' }}>
+      <div  style={{ padding: 'none' }}>
 
          <BluePointHeader/>
 
