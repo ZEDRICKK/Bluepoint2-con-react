@@ -1,4 +1,4 @@
-import { CirculosWhatsNavi } from "../components/CirculosWhatsNavi"
+import { Link } from "react-router-dom"
 import { ParrafosDerechaWhatsNavi } from "../components/ParrafosDerechaWhatsNavi"
 import { ParrafosIzquierdaWhatsNavi } from "../components/ParrafosIzquierdaWhatsNavi"
 import { BluePointHeader, Footer } from "../layout"
@@ -46,12 +46,17 @@ export const WhatsNaviPage = () => {
         Continuing care, follow-up visits and bill pay.
       </span>
 
+      <Link to='/experiencenavi'>
       <button id="boton2" className="boton2" style={{ top: "90%", left: "25%" }}>
         Experience Navi
       </button>
+      </Link>
+
+      <Link to='/contactus'>
       <button id="boton3" className="boton2" style={{ left: "55%", top: "90%" }}>
         Contact Us
       </button>
+      </Link>
 
       <span className="spanVerde" style={{ position: "absolute", top: "93%", left: "22%" }}>
         Schedule an Online Interactive Demo
@@ -65,7 +70,8 @@ export const WhatsNaviPage = () => {
     </div>
 
         <Footer />
-  
+    
+
     </div>
     
   )

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import { BluePointHeader, Footer } from "../layout"
 
 
@@ -287,12 +288,17 @@ export const NaviServicesPage = () => {
         NAVI•Marketing informs patients about your services and new product offers.
       </span>
 
+      <Link to='/videodemo'>
       <button className="boton2" style={{ top: "60%", left: "65%" }}>
         Video demo
       </button>
+      </Link>
+
+      <Link to='/contactus'>
       <button id="boton6" className="boton2" style={{ left: "65%", top: "68%" }}>
         Contact us
       </button>
+      </Link>
 
             <span
             className="spanVerde"

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useSlider } from "../hooks/useNext"
 
 
@@ -26,7 +27,9 @@ export const WithNaviYouCan = () => {
           <img className="circulo" src="../../../assets/bluepoint/enfermera.webp" style={{ top: "-10%", left: "57%", backgroundColor: "#2B388C", width: "429px", height: "428px", border: "2px solid white", zIndex: 1 }} />
           <span className="listgreen" style={{ color: "#ffff", fontSize: "28px", width: "360px", top: "36%", left: "25%" }}>Experience the power of mobile messaging for faster, more accurate communication to improve the patient experience.</span>
           <span className="titulofuerte" style={{ fontSize: "30px", top: "28%", left: "25%" }}> With NAVI you can...</span>
+          <Link to='/experiencenavi'>
           <button id="boton11" className="boton2" style={{ top: "75%", left: "25%", border: "1px solid white" }}>Experience Navi</button>
+          </Link>
         </div>
       </div>
 
@@ -36,7 +39,9 @@ export const WithNaviYouCan = () => {
           <img className="circulo" src="../../../assets/bluepoint/abrazo.webp" style={{ top: "6%", left: "50%", backgroundColor: "#2B388C", width: "365px", height: "363px", border: "2px solid white", zIndex: 1 }} />
           <span className="listgreen" style={{ color: "#ffff", fontSize: "28px", width: "360px", top: "30%", left: "25%" }}>Proactively send critical healthcare information to patients prior to their scheduled procedure.</span>
           <span className="titulofuerte" style={{ fontSize: "30px", top: "20%", left: "25%" }}> With NAVI you can...</span>
+          <Link to='/experiencenavi'>
           <button id="boton11" className="boton2" style={{ top: "65%", left: "25%", border: "1px solid white" }}>Experience Navi</button>
+          </Link>
         </div>
       </div>
 
@@ -46,7 +51,9 @@ export const WithNaviYouCan = () => {
           <img className="circulo" src="../../../assets/bluepoint/Paid screen w-hand.webp" style={{ top: "6%", left: "31%", backgroundColor: "#2B388C", width: "365px", height: "363px", border: "2px solid white", zIndex: 1 }} />
           <span className="listgreen" style={{ color: "#ffff", fontSize: "28px", width: "360px", top: "30%", left: "55%" }}>Proactively send critical healthcare information to patients prior to their scheduled procedure.</span>
           <span className="titulofuerte" style={{ fontSize: "30px", top: "20%", left: "55%" }}> With NAVI you can...</span>
+          <Link to='/experiencenavi'>
           <button id="boton11" className="boton2" style={{ top: "65%", left: "55%", border: "1px solid white" }}>Experience Navi</button>
+          </Link>
         </div>
       </div>
 

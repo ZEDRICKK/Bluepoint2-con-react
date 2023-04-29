@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import { ContactUsComponent } from "../components/ContactUsComponent"
 import { InTheNewsSection } from "../components/InTheNewsSection"
 import { WithNaviYouCan } from "../components/WithNaviYouCan"
@@ -37,7 +38,11 @@ export const HomePage = () => {
         <span id="span7" className="letra"><strong style={{ fontWeight: 'bold', fontSize: '24px' }}>•</strong> Text-based, pre-appointment insurance collection allows your office to see more patients.</span>
         <span id="span8" className="letra"><strong style={{ fontWeight: 'bold', fontSize: '24px' }}>•</strong> Patients click the link in your text message, snap a photo of their insurance card and that's all they need to do.</span>
         <span id="span9" className="letra"><strong style={{ fontWeight: 'bold', fontSize: '24px' }}>•</strong> Their card image will then be sent to you through HIPAA and HITECH compliant web services. <strong style={{ fontWeight: 'bold', fontSize: '19px' }}>It’s that easy!</strong></span>
+
+        <Link to='/videodemo'>
         <button className="boton">Video Demo</button>
+        </Link>  
+
       </div>
       <div style={{ backgroundColor: '#1CA17ECC', width: '100%', height: '418px', position: 'relative' }}>
         <span id="botonFlecha" style={{ left: '90%', top: '30%' }}>&gt;</span>
@@ -83,7 +88,9 @@ export const HomePage = () => {
             </div>
             <div className="divStyle" style={{backgroundColor: '#1CA17ECC', width: '100%', height: '435px', }}>
                 <span id="span21">Watch this short video to learn how NAVI can help your organization.</span>
+                <Link to='/experiencenavi'>
                 <button id="btn7" className="boton1">Request a live demo</button>
+                </Link>
                 <iframe src="https://player.vimeo.com/video/386648582?h=28677dd262&title=0&byline=0&portrait=0" width="640" height="360" frameBorder="0" allow="autoplay; fullscreen; picture-in-picture" allowFullScreen style={{position: 'absolute', top: '10%', left: '15%'}}></iframe>
             </div>
 

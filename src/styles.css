@@ -804,3 +804,34 @@ ul {
   top: 94.5%;
   position: 'absolute' 
 }
+
+#mainTitleVP{
+  position: absolute;
+  color: #2B388C;
+  font-size: 28px;
+  width: 350px;
+  left: 25%;
+  top: 15%;
+  font-family: helvetica-w01-bold,helvetica-w02-bold,helvetica-lt-w10-bold,sans-serif;
+  font-weight: bolder;
+}
+
+#parrafVP{
+  position: absolute;
+  color: #1CA17E;
+  font-size: 20px;
+  width: 310px;
+  left: 25%;
+  font-family: helvetica-w01-ligth,helvetica-w02-bold,helvetica-lt-w10-bold,sans-serif;
+  font-weight: lighter;
+}
+#parrafVP1{
+  position: absolute;
+  color: #1CA17E;
+  font-size: 20px;
+  width: 630px;
+  left: 30%;
+  font-family: helvetica-w01-ligth,helvetica-w02-bold,helvetica-lt-w10-bold,sans-serif;
+  font-weight: lighter;
+  text-align: center;
+}

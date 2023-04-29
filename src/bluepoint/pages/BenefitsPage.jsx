@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import { BenefitsMainComponent } from "../components/BenefitsMainComponent"
 import { BluePointHeader, Footer } from "../layout"
 
@@ -71,9 +72,12 @@ export const BenefitsPage = () => {
 
     <span className="listgreen" style={{ fontWeight: '100', fontSize: '32px', color: '#fff', width: '401px', top: '57%', left: '10%' }}>All of this can be done from their mobile device!</span>
 
+    <Link to='/experiencenavi'>
     <button id="boton4" className="boton2" style={{ top: '80%', left: '25%', border: '1px solid white' }}>Experience Navi</button>
+    </Link>
+    <Link to='/contactus'>
     <button id="boton5" className="boton2" style={{ left: '55%', top: '80%', border: '1px solid white' }}>Contact Us</button>
-
+    </Link>
     <span className="spanVerde" style={{ position: 'absolute', top: '90%', left: '22%', color: '#fff' }}>Schedule an Online Interactive Demo</span>
     <span className="spanVerde" style={{ position: 'absolute', top: '90%', left: '55%', color: '#fff' }}>For More Detailed Information</span>
 
